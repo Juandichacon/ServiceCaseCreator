@@ -18,7 +18,7 @@ Este servicio está diseñado para manejar operaciones de consulta, extracción 
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/
+   git clone https://github.com/tu_usuario/Servicecasecreator
 
 
 Accede a la documentación de la API en tu navegador visitando la URL http://localhost:4000/docs.
