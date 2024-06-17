@@ -1,0 +1,6 @@
+Flask
+flask-swagger-ui
+pyodbc 
+sqlalchemy
+flask-sqlalchemy
+pandas

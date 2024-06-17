@@ -1,0 +1,53 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API para obtener datos preparados de AFWMailHistory",
+    "version": "1.0.0",
+    "title": "AFWMailHistory API"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "cases",
+      "description": "Operaciones relacionadas con AFWMailHistory"
+    }
+  ],
+  "schemes": ["http"],
+  "paths": {
+    "/cases_prepared": {
+      "get": {
+        "tags": ["cases"],
+        "summary": "Obtener datos preparados en formato JSONL",
+        "description": "Este endpoint devuelve los primeros 1000 registros de AFWMailHistory en formato JSONL, preparados para fine-tuning.",
+        "produces": ["application/jsonl"],
+        "responses": {
+          "200": {
+            "description": "Archivo JSONL generado con éxito",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        }
+      }
+    },
+    "/cases": {
+      "get": {
+        "tags": ["cases"],
+        "summary": "Obtener datos en formato CSV",
+        "description": "Este endpoint devuelve los primeros 100 registros de AFWMailHistory en formato CSV.",
+        "produces": ["text/csv"],
+        "responses": {
+          "200": {
+            "description": "Archivo CSV generado con éxito",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        }
+      }
+    }
+  }
+}
